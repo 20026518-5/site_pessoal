@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Vinicius - Portfólio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfólio de Lucas Vinícius. Soluções em tecnologia, criação de sites e manutenção de computadores em Buritis-RO.">
+    <meta name="keywords" content="criação de sites, manutenção de computador, formatação, Buritis, Rondônia, técnico de informática, Lucas Vinicius">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/9kYBwynZ/Cart-o-de-visita-para-eletricista-moderno-simples-amarelo-e-preto-removebg-preview.png" type="image/png">
+
+    <!-- Incluindo Tailwind CSS para estilização rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Incluindo a fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Incluindo a biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Definindo a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Efeito de scroll suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Estilo para a imagem de fundo do herói com um overlay escuro */
+        .hero-bg {
+            /* IMPORTANTE: Substitua a URL abaixo pela URL da sua imagem de fundo */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ibb.co/B5nDN8hX/global-specialty-digital-marquee.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho e Navegação -->
+    <nav id="navbar" class="bg-white shadow-md fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo e Nome -->
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- IMPORTANTE: Substitua o "src" abaixo pela URL da sua logo -->
+                    <img class="h-10 w-auto mr-2" src="https://i.ibb.co/9kYBwynZ/Cart-o-de-visita-para-eletricista-moderno-simples-amarelo-e-preto-removebg-preview.png" alt="Logo">
+                    <a href="#home" class="text-2xl font-bold text-sky-600">Lucas Vinícius</a>
+                </div>
+                
+                <!-- Links de Navegação e Contato para Desktop -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-sky-600 transition duration-300">Início</a>
+                    <a href="#sobre" class="text-gray-600 hover:text-sky-600 transition duration-300">Sobre</a>
+                    <a href="#servicos" class="text-gray-600 hover:text-sky-600 transition duration-300">Serviços</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-sky-600 transition duration-300">Portfólio</a>
+                    <a href="#contato" class="bg-sky-500 text-white px-4 py-2 rounded-md hover:bg-sky-600 transition duration-300">Contato</a>
+                </div>
+
+                <!-- Menu Hamburger para Mobile -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white">
+            <a href="#home" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Início</a>
+            <a href="#sobre" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Sobre</a>
+            <a href="#servicos" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Serviços</a>
+            <a href="#portfolio" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Portfólio</a>
+            <a href="#contato" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Seção Inicial (Hero) -->
+    <section id="home" class="h-screen flex items-center justify-center hero-bg">
+        <div class="text-center text-white p-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Olá, eu sou Lucas Vinícius</h1>
+            <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto">Seu parceiro para soluções digitais e manutenção confiável</p>
+            <a href="#servicos" class="bg-sky-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-sky-600 transition duration-300 transform hover:scale-105">Conheça Meus Serviços</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- IMPORTANTE: Substitua o "src" abaixo pela URL da sua foto -->
+                    <img src="https://i.ibb.co/vNV12Z2/95715550-239266550655724-4795721286842056704-o-2-304.jpg" alt="Foto de Lucas Vinicius" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Sobre Mim</h2>
+                    <p class="text-gray-600 mb-4">
+                        Sou um entusiasta por tecnologia, morador de Buritis-RO desde 2002. Minha trajetória acadêmica inclui formações em Engenharia de Software, Gestão Comercial e Cibersegurança.
+                    </p>
+                    <p class="text-gray-600">
+                        Ao longo da minha carreira, atuei em instituições como Banco da Amazônia, SEDUC-RO e SEMECE-Buritis, sempre buscando unir conhecimento técnico e soluções práticas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="py-20 bg-sky-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800">Meus Serviços</h2>
+                <p class="mt-4 text-lg text-gray-600">Soluções completas para suas necessidades tecnológicas.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card de Serviço -->
+                <div class="bg-white text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-sky-500 mb-4">
+                        <i class="fas fa-tools fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Troca de Peças</h3>
+                    <p class="text-gray-600">Substituição e upgrade de componentes para melhorar o desempenho do seu computador.</p>
+                </div>
+                <!-- Card de Serviço -->
+                <div class="bg-white text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-sky-500 mb-4">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Manutenção Preventiva</h3>
+                    <p class="text-gray-600">Limpeza, otimização e ajustes de software para evitar problemas futuros.</p>
+                </div>
+                <!-- Card de Serviço -->
+                <div class="bg-white text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-sky-500 mb-4">
+                        <i class="fas fa-desktop fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Formatação de Computadores</h3>
+                    <p class="text-gray-600">Instalação limpa do sistema, com backup e configuração personalizada.</p>
+                </div>
+                <!-- Card de Serviço -->
+                <div class="bg-white text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-sky-500 mb-4">
+                        <i class="fas fa-download fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Instalação de Softwares</h3>
+                    <p class="text-gray-600">Programas essenciais e específicos para o seu trabalho ou lazer.</p>
+                </div>
+                <!-- Card de Serviço -->
+                <div class="bg-white text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-sky-500 mb-4">
+                        <i class="fas fa-globe fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Criação de Sites</h3>
+                    <p class="text-gray-600">Desenvolvimento de páginas modernas, responsivas e otimizadas.</p>
+                </div>
+                <!-- Card de Serviço -->
+                <div class="bg-white text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-sky-500 mb-4">
+                        <i class="fas fa-graduation-cap fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Trabalhos Acadêmicos</h3>
+                    <p class="text-gray-600">Formatação, revisão e produção de conteúdo conforme normas ABNT.</p>
+                </div>
+                 <!-- Card de Serviço -->
+                <div class="bg-white text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 md:col-span-2 lg:col-span-1 lg:col-start-2">
+                    <div class="text-sky-500 mb-4">
+                        <i class="fas fa-file-alt fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Serviços Administrativos</h3>
+                    <p class="text-gray-600">Organização de documentos, planilhas e suporte em rotinas de escritório.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Portfólio -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 bg-gray-100 py-10 rounded-lg">
+                <h2 class="text-4xl font-bold text-gray-800">Meu Portfólio</h2>
+                <p class="mt-4 text-lg text-gray-600">Confira um dos meus projetos recentes.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projeto 1 -->
+                <div class="bg-white rounded-lg shadow-xl flex flex-col items-center p-6 text-center">
+                    <a href="https://contratoia.netlify.app/#home" target="_blank">
+                        <img src="https://i.ibb.co/5WDJPR8D/Copilot-20250907-161721.png" alt="Ícone do site Contrato IA" class="h-24 w-24 object-cover rounded-lg shadow-md hover:opacity-80 transition-opacity mb-4">
+                    </a>
+                    <h3 class="text-xl font-bold mb-1">Gerador de Contratos com IA</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Automatiza a criação de contratos com IA, simplificando processos burocráticos.</p>
+                    <a href="https://contratoia.netlify.app/#home" target="_blank" class="mt-auto inline-block bg-sky-500 text-white px-6 py-2 rounded-md hover:bg-sky-600 transition duration-300 font-semibold">
+                        Visitar o Site
+                    </a>
+                </div>
+
+                <!-- Projeto 2 (Placeholder) -->
+                <div class="bg-white rounded-lg shadow-xl flex flex-col items-center p-6 text-center border-2 border-dashed border-gray-300">
+                    <div class="h-24 w-24 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-plus fa-2x text-gray-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-gray-500">Projeto Futuro</h3>
+                    <p class="text-gray-500 mb-4 flex-grow">A descrição do seu próximo projeto incrível aparecerá aqui.</p>
+                    <button disabled class="mt-auto inline-block bg-gray-300 text-gray-500 px-6 py-2 rounded-md cursor-not-allowed">
+                        Em Breve
+                    </button>
+                </div>
+                
+                <!-- Projeto 3 (Placeholder) -->
+                <div class="bg-white rounded-lg shadow-xl flex flex-col items-center p-6 text-center border-2 border-dashed border-gray-300">
+                    <div class="h-24 w-24 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-plus fa-2x text-gray-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-gray-500">Projeto Futuro</h3>
+                    <p class="text-gray-500 mb-4 flex-grow">A descrição do seu próximo projeto incrível aparecerá aqui.</p>
+                    <button disabled class="mt-auto inline-block bg-gray-300 text-gray-500 px-6 py-2 rounded-md cursor-not-allowed">
+                        Em Breve
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Vamos Conversar?</h2>
+            <p class="text-gray-600 mt-2 mb-8">Estou sempre aberto a novas oportunidades e colaborações. Entre em contato!</p>
+            <!-- Este botão agora abre o modal do formulário -->
+            <button id="open-contact-modal" class="bg-sky-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-sky-600 transition duration-300">
+                Enviar uma Mensagem
+            </button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Coluna 1: Logo e Descrição -->
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start mb-4">
+                        <img src="https://i.ibb.co/MyssykNS/Cart-o-de-visita-para-eletricista-moderno-simples-amarelo-e-preto-3.png" alt="Logo" class="h-14 mr-2">
+                        <div>
+                            <h3 class="text-xl font-bold">Lucas Vinicius</h3>
+                            <p class="text-sm text-sky-400">Soluções Tecnológicas</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Seu parceiro para soluções digitais e manutenção confiável.
+                    </p>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="https://www.linkedin.com/in/lucas-vinicius-sampaio-lima/" target="_blank" class="text-gray-400 hover:text-sky-400 transition duration-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/20026518-5" target="_blank" class="text-gray-400 hover:text-sky-400 transition duration-300">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Serviços -->
+                <div class="text-center">
+                    <h3 class="text-lg font-semibold mb-4">Serviços</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#servicos" class="text-gray-400 hover:text-white">Criação de Sites</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-white">Manutenção de Software</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-white">Formatação de Computadores</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-white">Troca de Peças</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Links Rápidos -->
+                <div class="text-center">
+                    <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Início</a></li>
+                        <li><a href="#sobre" class="text-gray-400 hover:text-white">Sobre</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-white">Serviços</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-white">Portfólio</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-white">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Contato -->
+                <div class="text-center">
+                    <h3 class="text-lg font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-center justify-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>55 69 9 9308-2950</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>lucasviniciussampaiolima@gmail.com</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            <span>Buritis - RO</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Lucas Vinicius Sampaio Lima / INTELLEART. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5569993082950" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-40">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+
+    <!-- Modal de Contato -->
+    <div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl p-8 w-full max-w-lg relative">
+            <!-- Botão de Fechar -->
+            <button id="close-modal-button" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <!-- Formulário -->
+            <form id="contact-form">
+                <h2 class="text-2xl font-bold mb-6 text-center">Enviar Mensagem</h2>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Seu Email:</label>
+                    <input type="email" name="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Assunto:</label>
+                    <input type="text" name="subject" id="subject" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensagem:</label>
+                    <textarea name="message" id="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300">
+                        Enviar Mensagem
+                    </button>
+                </div>
+            </form>
+
+            <!-- Mensagem de Sucesso -->
+            <div id="success-message" class="hidden text-center">
+                <h2 class="text-2xl font-bold mb-4 text-green-600">Enviado!</h2>
+                <p>Seu email foi enviado com sucesso. Por gentileza, aguarde que logo retornaremos.</p>
+                <button id="close-success-message" class="mt-6 bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notificação Toast -->
+    <div id="toast-notification" class="fixed bottom-5 right-5 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg hidden transition-opacity duration-300 z-50">
+        <p id="toast-message"></p>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
